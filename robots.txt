@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rizakhh.github.io/qrfilme/sitemap.xml

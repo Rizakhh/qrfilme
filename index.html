@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QR FILME — O podcast que te ensina a dominar todas as telas</title>
+    <meta
+      name="description"
+      content="Curso gratuito de audiovisual distribuído pela cidade através de QR Codes. Escaneie, coloque os fones e aprenda onde estiver."
+    />
+    <meta name="theme-color" content="#005f61" />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://rizakhh.github.io/qrfilme/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta
+      property="og:title"
+      content="QR FILME — O podcast que te ensina a dominar todas as telas"
+    />
+    <meta
+      property="og:description"
+      content="Um curso gratuito de audiovisual que ocupa a cidade através de QR Codes."
+    />
+    <meta
+      property="og:url"
+      content="https://rizakhh.github.io/qrfilme/"
+    />
+    <meta
+      property="og:image"
+      content="https://rizakhh.github.io/qrfilme/img/logo.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="QR FILME — O podcast que te ensina a dominar todas as telas"
+    />
+    <meta
+      name="twitter:description"
+      content="Um curso gratuito de audiovisual que ocupa a cidade através de QR Codes."
+    />
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "QR FILME",
+        "description": "Curso gratuito de audiovisual distribuído pela cidade através de QR Codes.",
+        "url": "https://rizakhh.github.io/qrfilme/",
+        "sameAs": [
+          "https://linktr.ee/qrfilme",
+          "https://instagram.com/canalrespirarte"
+        ],
+        "parentOrganization": { "@type": "Organization", "name": "Respirar-te" }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" id="inicio">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="QR FILME — início">
+          <img src="img/logo.png" alt="QR FILME" width="176" height="94" />
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Abrir menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+          <a href="#sobre">Sobre</a>
+          <a href="#para-quem">Para quem é</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#acessibilidade">Acessibilidade</a>
+          <a href="#objetivos">Objetivos</a>
+          <a href="#onde-encontrar">Onde encontrar</a>
+          <a
+            class="nav-cta"
+            href="https://linktr.ee/qrfilme"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ouvir agora <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <aside class="font-settings" aria-label="Configuração de tipografia">
+      <button
+        class="font-settings-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="font-settings-panel"
+        title="Escolher fonte dos títulos"
+      >
+        <span aria-hidden="true">Aa</span>
+        <span class="sr-only">Escolher fonte dos títulos</span>
+      </button>
+      <div class="font-settings-panel" id="font-settings-panel" hidden>
+        <div class="font-settings-heading">
+          <strong>Fonte dos títulos</strong>
+          <button type="button" data-font-close aria-label="Fechar configurações">×</button>
+        </div>
+        <label for="font-choice">Escolha uma opção</label>
+        <select id="font-choice" data-font-choice>
+          <option value="impact">Impact editorial</option>
+          <option value="arial-black">Arial Black</option>
+          <option value="franklin">Franklin Gothic</option>
+          <option value="century">Century Gothic</option>
+          <option value="trebuchet">Trebuchet MS</option>
+          <option value="verdana">Verdana</option>
+          <option value="tahoma">Tahoma</option>
+          <option value="segoe">Segoe UI</option>
+          <option value="gill">Gill Sans</option>
+          <option value="futura">Futura</option>
+          <option value="avenir">Avenir Next</option>
+          <option value="rockwell">Rockwell</option>
+          <option value="cooper">Cooper Black</option>
+          <option value="georgia">Georgia</option>
+          <option value="baskerville">Baskerville</option>
+          <option value="garamond">Garamond</option>
+          <option value="palatino">Palatino</option>
+          <option value="courier">Courier New</option>
+          <option value="lucida">Lucida Sans</option>
+          <option value="system">Sistema</option>
+        </select>
+        <p class="font-preview" aria-hidden="true">QR FILME</p>
+        <button class="font-reset" type="button" data-font-reset>Restaurar padrão</button>
+      </div>
+    </aside>
+
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid container">
+          <div class="hero-copy">
+            <p class="eyebrow eyebrow-light">
+              QR FILME <span>—</span> transmissão aberta
+            </p>
+            <p class="hero-slogan">
+              O podcast que te ensina a dominar todas as telas.
+            </p>
+            <h1 id="hero-title">
+              O audiovisual pode começar no <em>ponto de ônibus.</em>
+            </h1>
+            <p class="hero-lede">
+              QR FILME é um curso gratuito de audiovisual distribuído pela
+              cidade através de QR Codes. Escaneie, coloque os fones e aprenda
+              onde estiver.
+            </p>
+            <div class="button-row">
+              <a
+                class="button button-sun"
+                href="https://linktr.ee/qrfilme"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ouvir episódios <span aria-hidden="true">↗</span></a
+              >
+              <a class="button button-ghost" href="#sobre"
+                >Conheça o projeto <span aria-hidden="true">↓</span></a
+              >
+            </div>
+            <p class="hero-note">
+              <span class="dot" aria-hidden="true"></span> Gratuito, aberto e
+              feito para aprender na cidade
+            </p>
+          </div>
+          <div
+            class="hero-signal"
+            aria-label="Acesse o QR FILME pelo código QR"
+          >
+            <div class="signal-top">
+              <span>APONTE A CÂMERA</span><span>01 / 01</span>
+            </div>
+            <div class="qr-panel">
+              <div class="qr-frame">
+                <img
+                  src="img/qrfilme-qrcode.svg"
+                  alt="QR Code para acessar o QR FILME no Linktree"
+                  width="280"
+                  height="280"
+                />
+              </div>
+              <p>Escaneie para ouvir<br /><strong>o primeiro passo.</strong></p>
+            </div>
+            <div class="signal-bottom">
+              <span>O CINEMA ESTÁ EM TODO LUGAR</span
+              ><span class="signal-arrow" aria-hidden="true">↘</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section-about"
+        id="sobre"
+        aria-labelledby="sobre-title"
+      >
+        <div class="container about-grid">
+          <div class="section-intro reveal">
+            <p class="eyebrow">[ 01 ] Sobre o projeto</p>
+            <h2 id="sobre-title">Um curso que<br /><em>mora na rua.</em></h2>
+          </div>
+          <div class="about-copy reveal">
+            <p class="lead">
+              O QR FILME é uma experiência de formação cultural acessível que
+              busca democratizar o acesso ao conhecimento sobre o audiovisual
+              por meio de episódios em formato de podcast.
+            </p>
+            <p>
+              Os conteúdos são disponibilizados gratuitamente através de
+              cartazes com QR Codes instalados em diferentes espaços da cidade,
+              como comércios, restaurantes, praças e escolas.
+            </p>
+            <p>
+              A proposta nasceu da compreensão de que o audiovisual está no
+              cotidiano de todas as pessoas: na comunicação, na educação, no
+              empreendedorismo, na expressão artística e na preservação da
+              memória.
+            </p>
+            <p>
+              Ao escanear o código, qualquer pessoa acessa episódios curtos,
+              gratuitos e apresentados em linguagem simples — usando apenas o
+              próprio celular.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section-audience section-dark"
+        id="para-quem"
+        aria-labelledby="para-quem-title"
+      >
+        <div class="container">
+          <div class="section-heading split-heading reveal">
+            <div>
+              <p class="eyebrow eyebrow-light">[ 02 ] Para quem é</p>
+              <h2 id="para-quem-title">
+                Comece de onde<br /><em>você está.</em>
+              </h2>
+            </div>
+            <p>
+              O QR FILME foi pensado para quem deseja aprender audiovisual de
+              forma prática, acessível e sem complicação. Não importa se você
+              nunca gravou um vídeo ou se já produz conteúdo.
+            </p>
+          </div>
+          <ul class="card-grid audience-grid">
+            <li class="info-card reveal">
+              <h3>Criadores de conteúdo</h3>
+              <p>
+                Para transformar ideias em vídeos mais claros, criativos e
+                envolventes.
+              </p>
+            </li>
+            <li class="info-card reveal">
+              <h3>Empreendedores</h3>
+              <p>
+                Para apresentar produtos e serviços com uma comunicação que
+                conecta.
+              </p>
+            </li>
+            <li class="info-card reveal">
+              <h3>Artistas e produtores culturais</h3>
+              <p>
+                Para registrar processos, projetos e histórias do território.
+              </p>
+            </li>
+            <li class="info-card reveal">
+              <h3>Estudantes e curiosos</h3>
+              <p>
+                Para descobrir o audiovisual e dar os primeiros passos com
+                autonomia.
+              </p>
+            </li>
+            <li class="info-card reveal">
+              <h3>Educadores e instituições</h3>
+              <p>
+                Para levar novas ferramentas de ensino e expressão para suas
+                comunidades.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        class="section section-create"
+        id="criar"
+        aria-labelledby="criar-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">[ 03 ] O que você será capaz de criar?</p>
+            <h2 id="criar-title">Ideias que saem<br /><em>do papel.</em></h2>
+            <p>
+              Ao longo dos episódios, você desenvolve uma nova forma de olhar
+              para o audiovisual e entende como ele pode fazer parte do seu
+              cotidiano.
+            </p>
+          </div>
+          <div class="possibility-grid">
+            <article class="possibility reveal">
+              <h3>Vídeos criativos e envolventes</h3>
+              <p>
+                Tire do papel o projeto de criar um canal e aprenda técnicas
+                para produzir vídeos de qualidade.
+              </p>
+            </article>
+            <article class="possibility reveal">
+              <h3>Divulgação de produtos e serviços</h3>
+              <p>
+                Use o audiovisual para divulgar seu trabalho e fortalecer seu
+                negócio.
+              </p>
+            </article>
+            <article class="possibility reveal">
+              <h3>Vídeos pessoais e familiares</h3>
+              <p>
+                Crie vlogs, registros e memórias com uma comunicação mais
+                atraente.
+              </p>
+            </article>
+            <article class="possibility reveal">
+              <h3>Projetos culturais</h3>
+              <p>
+                Transforme ideias em projetos, registros e novas formas de
+                expressão.
+              </p>
+            </article>
+            <article class="possibility reveal">
+              <h3>Comunicação institucional</h3>
+              <p>Encontre novas maneiras de ensinar, comunicar e mobilizar.</p>
+            </article>
+            <article class="possibility reveal">
+              <h3>Portfólios criativos e networking</h3>
+              <p>Apresente melhor seu trabalho e crie novas conexões.</p>
+            </article>
+            <article class="possibility reveal">
+              <h3>Cinema independente</h3>
+              <p>
+                Conheça os primeiros passos dos festivais e da produção
+                independente.
+              </p>
+            </article>
+            <article class="possibility reveal">
+              <h3>Vídeos para eventos e comunidades</h3>
+              <p>
+                Registre ações coletivas, projetos comunitários e histórias
+                locais.
+              </p>
+            </article>
+            <article class="possibility reveal">
+              <h3>Primeiros passos no mercado audiovisual</h3>
+              <p>
+                Dê os primeiros passos no cinema, na comunicação e na produção.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section-story section-orange"
+        id="por-tras"
+        aria-labelledby="por-tras-title"
+      >
+        <div class="container story-grid">
+          <div
+            class="portrait-carousel reveal"
+            data-carousel
+            aria-label="Fotos de Lai Costa"
+            aria-roledescription="carrossel"
+          >
+            <div class="portrait-viewport">
+              <figure
+                class="portrait-slide"
+                data-slide
+                aria-label="Foto 1 de 3"
+              >
+                <img
+                  src="img/lai1.jpg"
+                  alt="Retrato de Lai Costa usando óculos"
+                  width="899"
+                  height="1599"
+                  loading="lazy"
+                />
+              </figure>
+              <figure
+                class="portrait-slide"
+                data-slide
+                aria-label="Foto 2 de 3"
+                hidden
+              >
+                <img
+                  src="img/lai2.jpg"
+                  alt="Retrato de Lai Costa"
+                  width="899"
+                  height="1599"
+                  loading="lazy"
+                />
+              </figure>
+              <figure
+                class="portrait-slide"
+                data-slide
+                aria-label="Foto 3 de 3"
+                hidden
+              >
+                <img
+                  src="img/lai3.jpg"
+                  alt="Lai Costa sorrindo e fazendo sinal positivo"
+                  width="896"
+                  height="1592"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+            <div class="portrait-controls">
+              <button
+                type="button"
+                data-carousel-prev
+                aria-label="Foto anterior"
+              >
+                ←
+              </button>
+              <p aria-live="polite"><span data-carousel-current>1</span> / 3</p>
+              <button
+                type="button"
+                data-carousel-next
+                aria-label="Próxima foto"
+              >
+                →
+              </button>
+            </div>
+          </div>
+          <div class="story-copy reveal">
+            <p class="eyebrow eyebrow-dark">[ 04 ] Por trás do projeto</p>
+            <h2 id="por-tras-title">
+              Uma rede para<br /><em>tornar acessível.</em>
+            </h2>
+            <p>
+              O QR FILME é um projeto idealizado por Lai Costa, cineasta e
+              estrategista de conteúdo com mais de 10 anos de atuação no mercado
+              audiovisual.
+            </p>
+            <p>
+              A partir da fundação da Respirar-te, sua trajetória une cinema,
+              educação e criação de conteúdo digital, com foco em tornar o
+              audiovisual mais acessível, prático e conectado à realidade das
+              pessoas.
+            </p>
+            <p>
+              A execução envolve uma rede de profissionais reunidos para levar o
+              aprendizado para além das salas de aula, ocupando a cidade como
+              espaço de educação, arte e cultura.
+            </p>
+            <p>
+              O projeto é uma realização da Respirar-te e integra ações
+              viabilizadas através da Política Nacional Aldir Blanc — PNAB.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section-steps"
+        id="como-funciona"
+        aria-labelledby="como-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">[ 05 ] Como funciona</p>
+            <h2 id="como-title">Quatro passos. Zero burocracia.</h2>
+          </div>
+          <ol class="steps-grid">
+            <li class="step reveal">
+              <div class="step-meta">
+                <span class="step-icon step-icon-poster" aria-hidden="true"></span>
+              </div>
+              <div>
+                <h3>Encontre o cartaz</h3>
+                <p>Encontre um cartaz do QR FILME espalhado pela cidade.</p>
+              </div>
+            </li>
+            <li class="step reveal">
+              <div class="step-meta">
+                <span class="step-icon step-icon-scan" aria-hidden="true">
+                  <span class="mini-qr">
+                    <span class="mini-qr-finder mini-qr-finder-tl"></span>
+                    <span class="mini-qr-finder mini-qr-finder-tr"></span>
+                    <span class="mini-qr-finder mini-qr-finder-bl"></span>
+                  </span>
+                </span>
+              </div>
+              <div>
+                <h3>Escaneie o código</h3>
+                <p>Aponte a câmera do celular para o QR Code e abra o link.</p>
+              </div>
+            </li>
+            <li class="step reveal">
+              <div class="step-meta">
+                <span class="step-icon step-icon-format" aria-hidden="true"></span>
+              </div>
+              <div>
+                <h3>Escolha o formato</h3>
+                <p>
+                  Acesse a versão em áudio ou o conteúdo com legenda descritiva.
+                </p>
+              </div>
+            </li>
+            <li class="step reveal">
+              <div class="step-meta">
+                <span class="step-icon step-icon-phone" aria-hidden="true"></span>
+              </div>
+              <div>
+                <h3>Aprenda no celular</h3>
+                <p>Ouça episódios curtos onde e quando quiser.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section
+        class="section section-access"
+        id="acessibilidade"
+        aria-labelledby="access-title"
+      >
+        <div class="container">
+          <div class="section-heading split-heading reveal">
+            <div>
+              <p class="eyebrow">[ 06 ] Acessibilidade</p>
+              <h2 id="access-title">
+                Para todos os ouvidos.<br /><em>Para todos os olhares.</em>
+              </h2>
+            </div>
+            <p>
+              Os formatos estão disponíveis gratuitamente no mesmo ambiente
+              digital, promovendo inclusão, autonomia e democratização do
+              conhecimento.
+            </p>
+          </div>
+          <div class="access-grid">
+            <article class="access-card reveal">
+              <span class="access-symbol" aria-hidden="true">◉</span>
+              <div>
+                <h3>Versão em áudio</h3>
+                <p>Experiência imersiva em formato de podcast tradicional.</p>
+              </div>
+            </article>
+            <article class="access-card reveal">
+              <span class="access-symbol" aria-hidden="true">CC</span>
+              <div>
+                <h3>Legenda descritiva</h3>
+                <p>Conteúdo adaptado para pessoas surdas e ensurdecidas.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section-objectives"
+        id="objetivos"
+        aria-labelledby="objectives-title"
+      >
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">[ 07 ] Objetivos</p>
+            <h2 id="objectives-title">O que o QR FILME quer mover.</h2>
+          </div>
+          <div class="objectives-grid">
+            <article class="objective reveal">
+              <div>
+                <h3>Democratizar a formação</h3>
+                <p>Oferecer acesso livre ao aprendizado audiovisual.</p>
+              </div>
+            </article>
+            <article class="objective reveal">
+              <div>
+                <h3>Estimular a criatividade</h3>
+                <p>Despertar o pensamento crítico, criativo e autoral.</p>
+              </div>
+            </article>
+            <article class="objective reveal">
+              <div>
+                <h3>Cidade como sala de aula</h3>
+                <p>Transformar espaços públicos em ambientes formativos.</p>
+              </div>
+            </article>
+            <article class="objective reveal">
+              <div>
+                <h3>Audiovisual para iniciantes</h3>
+                <p>
+                  Apresentar conteúdos em linguagem simples para quem está
+                  começando.
+                </p>
+              </div>
+            </article>
+            <article class="objective reveal">
+              <div>
+                <h3>Cidade como cultura</h3>
+                <p>Valorizar a rua como espaço cultural vivo.</p>
+              </div>
+            </article>
+            <article class="objective reveal">
+              <div>
+                <h3>Conteúdo aberto</h3>
+                <p>
+                  Oferecer acesso sem login, cadastro ou barreiras
+                  desnecessárias.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section-locations section-dark"
+        id="onde-encontrar"
+        aria-labelledby="locations-title"
+      >
+        <div class="container locations-inner">
+          <div class="reveal">
+            <p class="eyebrow eyebrow-light">[ 08 ] Onde encontrar</p>
+            <h2 id="locations-title">
+              QR Codes espalhados<br /><em>pela cidade.</em>
+            </h2>
+            <p>A cada esquina, uma sala de aula. Procure pelos cartazes em:</p>
+          </div>
+          <ul class="location-list reveal">
+            <li>
+              <span class="location-icon location-icon-school" aria-hidden="true">🏫</span
+              ><strong>Escolas</strong>
+            </li>
+            <li>
+              <span class="location-icon location-icon-park" aria-hidden="true">🌳</span
+              ><strong>Praças</strong>
+            </li>
+            <li>
+              <span class="location-icon location-icon-bus" aria-hidden="true">🚌</span
+              ><strong>Pontos de ônibus</strong>
+            </li>
+            <li>
+              <span class="location-icon location-icon-food" aria-hidden="true">🍽️</span
+              ><strong>Restaurantes</strong>
+            </li>
+            <li>
+              <span class="location-icon location-icon-cafe" aria-hidden="true">☕</span
+              ><strong>Lanchonetes</strong>
+            </li>
+            <li>
+              <span class="location-icon location-icon-culture" aria-hidden="true">🎭</span
+              ><strong>Espaços culturais</strong>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="final-call" id="ouvir" aria-labelledby="final-title">
+        <div class="container final-grid">
+          <div class="final-copy reveal">
+            <p class="final-tag">Última chamada</p>
+            <h2 id="final-title">
+              Uma cidade cheia de histórias merece mais criadores.
+            </h2>
+            <p>Escaneie o QR Code e faça parte dessa experiência.</p>
+            <div class="button-row">
+              <a
+                class="button button-dark"
+                href="https://linktr.ee/qrfilme"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ouvir agora <span aria-hidden="true">↗</span></a
+              ><button
+                class="button button-outline-dark"
+                type="button"
+                id="share-button"
+              >
+                Compartilhar <span aria-hidden="true">＋</span>
+              </button>
+            </div>
+            <p
+              class="share-status"
+              id="share-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </div>
+          <div class="final-qr reveal">
+            <img
+              src="img/qrfilme-qrcode.svg"
+              alt="QR Code para acessar o QR FILME no Linktree"
+              width="230"
+              height="230"
+              loading="lazy"
+            /><span>ESCANEIE<br />E COMECE</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a
+      class="mobile-listen"
+      href="https://linktr.ee/qrfilme"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Ouvir agora <span aria-hidden="true">↗</span></a
+    >
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <a
+          class="footer-brand"
+          href="#inicio"
+          aria-label="Voltar ao início do QR FILME"
+          ><img src="img/logo.png" alt="QR FILME" width="160" height="86"
+        /></a>
+        <div class="footer-links">
+          <p class="footer-label">Navegue</p>
+          <a href="#sobre">Sobre o projeto</a
+          ><a href="#como-funciona">Como funciona</a
+          ><a href="#acessibilidade">Acessibilidade</a>
+        </div>
+        <div class="footer-links">
+          <p class="footer-label">Acesse</p>
+          <a
+            href="https://linktr.ee/qrfilme"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Linktree do QR FILME ↗</a
+          ><a
+            href="https://instagram.com/canalrespirarte"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram da Respirar-te ↗</a
+          >
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>
+          QR FILME © <time datetime="2026">2026</time> — Todos os direitos
+          reservados.
+        </p>
+        <img
+          src="img/logospnab.PNG"
+          alt="Logos da PNAB, Ministério da Cultura, Governo do Brasil, Prefeitura de Guarujá e Secretaria de Cultura"
+          width="900"
+          height="106"
+          loading="lazy"
+        />
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
