@@ -3,6 +3,27 @@
 
   document.documentElement.classList.add('js');
 
+  var themeSelect = document.querySelector('#site-theme');
+  if (themeSelect) {
+    var savedTheme;
+    try {
+      savedTheme = window.localStorage.getItem('qrfilme-theme');
+    } catch (error) {
+      savedTheme = null;
+    }
+    themeSelect.value = savedTheme === 'dark' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = themeSelect.value;
+    themeSelect.hidden = false;
+    themeSelect.addEventListener('change', function () {
+      document.documentElement.dataset.theme = themeSelect.value;
+      try {
+        window.localStorage.setItem('qrfilme-theme', themeSelect.value);
+      } catch (error) {
+        // The current theme still works when storage is unavailable.
+      }
+    });
+  }
+
   var menuButton = document.querySelector('.menu-toggle');
   var navigation = document.querySelector('#site-nav');
 

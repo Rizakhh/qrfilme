@@ -57,6 +57,8 @@ button { font: inherit; }
 .brand img { width: 150px; height: 58px; object-fit: contain; object-position: left center; mix-blend-mode: multiply; }
 .site-nav { display: flex; align-items: center; gap: clamp(.8rem, 2vw, 1.75rem); font-size: .74rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
 .site-nav a { text-decoration: none; border-bottom: 2px solid transparent; transition: color var(--ease), border-color var(--ease); }
+.theme-select { min-height: 36px; padding: .3rem .45rem; border: 1px solid currentColor; background: var(--cream); color: var(--ink); font: inherit; cursor: pointer; }
+.theme-select:focus-visible { outline-color: currentColor; }
 .site-nav a:hover { color: var(--orange-deep); border-color: currentColor; }
 .site-nav .nav-cta { padding: .7rem .9rem; background: var(--orange-deep); color: var(--cream); border-color: var(--orange-deep); }
 .site-nav .nav-cta:hover { background: var(--teal-deep); border-color: var(--teal-deep); color: var(--yellow); }
@@ -330,6 +332,36 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
   html.js .reveal { opacity: 1; transform: none; }
 }
+
+/* Dark theme keeps light backplates for the brand artwork and QR codes. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --dark-base: #071f20;
+  --dark-panel: #123031;
+  --dark-border: #527879;
+  --dark-text: #fff9ef;
+  --dark-muted: #c0d5d3;
+}
+[data-theme="dark"] :is(body, .site-header, .site-nav, .site-footer, .section-about, .section-create, .section-story, .section-steps, .section-access, .section-objectives, .final-call) { background: var(--dark-base); color: var(--dark-text); }
+[data-theme="dark"] :is(.info-card, .possibility, .possibility-grid[data-layout="rows"] .possibility:nth-child(odd), .story-copy, .step, .steps-grid[data-layout="timeline"], .access-card, .objective, .final-grid, .font-settings-panel) {
+  background: var(--dark-panel);
+  color: var(--dark-text);
+  border-color: var(--dark-border);
+}
+[data-theme="dark"] .steps-grid[data-layout="timeline"] .step { background: transparent; }
+[data-theme="dark"] :is(.site-header, .site-footer, .footer-bottom, .possibility-grid, .site-nav a) { border-color: var(--dark-border); }
+[data-theme="dark"] :is(.eyebrow, .footer-label, .section-steps .eyebrow, .story-copy h2 em) { color: var(--yellow); }
+[data-theme="dark"] :is(.about-copy .lead, .story-copy h2, .section-steps h2, .section-objectives h2, .final-copy h2, .info-card h3, .possibility h3, .step h3, .access-card h3, .objective h3, .footer-links a, .font-settings-heading strong, .portrait-controls p, .share-status) { color: var(--dark-text); }
+[data-theme="dark"] :is(.section-heading > p:not(.eyebrow), .info-card p, .possibility p, .story-copy p:not(.eyebrow), .step p, .access-card p, .objective p, .final-copy > p:not(.final-tag):not(.share-status), .footer-bottom p, .font-settings-panel label) { color: var(--dark-muted); }
+[data-theme="dark"] :is(.theme-select, .possibility-toolbar select, .steps-toolbar button, .menu-toggle, .font-settings-panel select) { background: var(--dark-panel); color: var(--dark-text); border-color: var(--dark-border); }
+[data-theme="dark"] .steps-toolbar button[aria-pressed="true"] { background: var(--yellow); color: var(--ink); }
+[data-theme="dark"] .steps-toolbar button:focus-visible { outline-color: var(--focus); }
+[data-theme="dark"] :is(.site-nav a:hover, .footer-links a:hover) { color: var(--yellow); }
+[data-theme="dark"] :is(.site-nav .nav-cta, .mobile-listen) { color: #081f20; }
+[data-theme="dark"] .site-nav .nav-cta:hover { color: var(--yellow); }
+[data-theme="dark"] .brand { background: var(--cream); }
+[data-theme="dark"] .footer-bottom img { background: var(--cream); mix-blend-mode: normal; }
+[data-theme="dark"] .final-call::before { opacity: .12; }
 
 @media print {
   .site-header, .font-settings, .mobile-listen, .button-row { display: none; }
