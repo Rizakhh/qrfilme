@@ -49,8 +49,9 @@
   var fontClose = document.querySelector('[data-font-close]');
   var fontReset = document.querySelector('[data-font-reset]');
   var fontStorageKey = 'qrfilme-display-font';
-  var defaultFont = 'impact';
+  var defaultFont = 'arial';
   var fontOptions = {
+    'arial': 'Arial, sans-serif',
     'impact': 'Impact, "Arial Black", Arial, sans-serif',
     'arial-black': '"Arial Black", Arial, sans-serif',
     'franklin': '"Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif',
@@ -223,8 +224,8 @@
     shareButton.addEventListener('click', function () {
       announceShare('');
       var shareData = {
-        title: 'QR FILME',
-        text: 'Conheça o QR FILME, o podcast que te ensina a dominar todas as telas.',
+        title: 'QR Filme',
+        text: 'Conheça o QR Filme, o podcast que te ensina a dominar todas as telas.',
         url: shareUrl
       };
 
@@ -241,6 +242,33 @@
         announceShare('Link copiado para a área de transferência.');
       }).catch(function () {
         announceShare('Não foi possível copiar o link. Copie manualmente: ' + shareUrl);
+      });
+    });
+  }
+
+  var possibilityLayout = document.querySelector('#possibility-layout');
+  var possibilityGrid = document.querySelector('#possibility-grid');
+
+  if (possibilityLayout && possibilityGrid) {
+    possibilityLayout.value = possibilityGrid.dataset.layout;
+    possibilityLayout.closest('.possibility-toolbar').hidden = false;
+    possibilityLayout.addEventListener('change', function () {
+      possibilityGrid.dataset.layout = possibilityLayout.value;
+    });
+  }
+
+  var stepsToolbar = document.querySelector('.steps-toolbar');
+  var stepsGrid = document.querySelector('#steps-grid');
+
+  if (stepsToolbar && stepsGrid) {
+    var stepsButtons = stepsToolbar.querySelectorAll('[data-steps-layout]');
+    stepsToolbar.hidden = false;
+    stepsButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        stepsGrid.dataset.layout = button.dataset.stepsLayout;
+        stepsButtons.forEach(function (option) {
+          option.setAttribute('aria-pressed', String(option === button));
+        });
       });
     });
   }

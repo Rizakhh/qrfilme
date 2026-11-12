@@ -1,10 +1,10 @@
-# QR FILME
+# QR Filme
 
-Landing page institucional do QR FILME — o podcast que te ensina a dominar todas as telas.
+Landing page institucional do QR Filme — o podcast que te ensina a dominar todas as telas.
 
 ## Sobre
 
-O QR FILME é um curso gratuito de audiovisual distribuído pela cidade através de QR Codes. Este site apresenta o projeto, seus públicos, objetivos, formatos acessíveis e o caminho para ouvir os episódios no Linktree.
+O QR Filme é um curso gratuito de audiovisual distribuído pela cidade através de QR Codes. Este site apresenta o projeto, seus públicos, objetivos, formatos acessíveis e o caminho para ouvir os episódios no Linktree.
 
 ## Tecnologias
 
@@ -82,7 +82,7 @@ As três fotografias de Lai Costa encontradas na pasta `img` foram aproveitadas 
 - navegação por âncoras;
 - compartilhamento com Web Share API e fallback para cópia;
 - carrossel manual e acessível com as fotos de Lai Costa, sem reprodução automática;
-- seletor acessível com 20 opções de fonte para os títulos, salvo localmente no dispositivo;
+- seletor acessível com 21 opções de fonte para os títulos, incluindo Arial como padrão, com a escolha salva no dispositivo;
 - confirmação acessível em `aria-live`;
 - botão flutuante de ouvir no mobile;
 - animações discretas via `IntersectionObserver`, respeitando movimento reduzido;
